@@ -71,7 +71,6 @@
     <Compile Include="Incoming\IncomingTradeFileWatcher.cs" />
     <Compile Include="Messages\EnrichParty2Message.cs" />
     <Compile Include="Messages\EnrichParty1Message.cs" />
-    <Compile Include="Messages\Spec\IMessage.cs" />
     <Compile Include="Messages\ValidateTradeMessage.cs" />
     <Compile Include="Model\IncomingTrade.cs" />
     <Compile Include="Incoming\Spec\IIncomingTradeProcessor.cs" />

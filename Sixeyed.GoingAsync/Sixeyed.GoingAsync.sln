@@ -40,8 +40,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{F2
 		Assets\Commands\run-app-v1.1.cmd = Assets\Commands\run-app-v1.1.cmd
 		Assets\Commands\run-app-v1.2.cmd = Assets\Commands\run-app-v1.2.cmd
 		Assets\Commands\run-app-v2.0.cmd = Assets\Commands\run-app-v2.0.cmd
-		Assets\Commands\setup.cmd = Assets\Commands\setup.cmd
-		Assets\Commands\teardown.cmd = Assets\Commands\teardown.cmd
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.GoingAsync.AppV2.Producer", "Sixeyed.GoingAsync.AppV2.Producer\Sixeyed.GoingAsync.AppV2.Producer.csproj", "{59DA1864-FDC1-4EAC-A40B-40CB6D39609F}"

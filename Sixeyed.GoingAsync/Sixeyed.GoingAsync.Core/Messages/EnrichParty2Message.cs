@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sixeyed.GoingAsync.Core.Messages
 {
-    public class EnrichParty2Message : IMessage
+    public class EnrichParty2Message
     {
         public int TradeId { get; set; }
 

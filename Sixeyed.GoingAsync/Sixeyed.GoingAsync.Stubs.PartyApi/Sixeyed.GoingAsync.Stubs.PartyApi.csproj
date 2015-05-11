@@ -14,7 +14,7 @@
     <RootNamespace>Sixeyed.GoingAsync.Stubs.PartyApi</RootNamespace>
     <AssemblyName>Sixeyed.GoingAsync.Stubs.PartyApi</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -114,7 +114,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1493</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Sixeyed.GoingAsync.Stubs.PartyApi</IISUrl>
+          <IISUrl>http://localhost:1493/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

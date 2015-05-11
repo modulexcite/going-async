@@ -1,7 +1,7 @@
 ﻿
 namespace Sixeyed.GoingAsync.Core.Messages
 {
-    public class EnrichParty1Message : IMessage
+    public class EnrichParty1Message
     {
         public int TradeId { get; set; }
 
