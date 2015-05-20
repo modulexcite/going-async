@@ -11,13 +11,13 @@ namespace Sixeyed.GoingAsync.AppV2.Producer
 {
     public class MessageSenderTradeProcessor : IIncomingTradeProcessor
     {
-	    private readonly IBus _bus;
+        private readonly IBus _bus;
         private readonly ITradeContextFactory _dbFactory;
 
         public MessageSenderTradeProcessor(ITradeContextFactory dbFactory, IBus bus)
         {
             _dbFactory = dbFactory;
-	        _bus = bus;
+            _bus = bus;
         }
 
         public void Process(IncomingTrade incomingTrade)
@@ -27,13 +27,13 @@ namespace Sixeyed.GoingAsync.AppV2.Producer
                 TradeId = incomingTrade.Id
             });
 
-			_bus.Send( new EnrichParty1Message
+            _bus.Send(new EnrichParty1Message
             {
                 TradeId = incomingTrade.Id,
                 Party1Lei = incomingTrade.Party1Lei
             });
 
-			_bus.Send( new EnrichParty2Message
+            _bus.Send(new EnrichParty2Message
             {
                 TradeId = incomingTrade.Id,
                 Party2Lei = incomingTrade.Party2Lei
@@ -43,7 +43,7 @@ namespace Sixeyed.GoingAsync.AppV2.Producer
         }
 
         public void Dispose()
-        { 
+        {
 
         }
     }
