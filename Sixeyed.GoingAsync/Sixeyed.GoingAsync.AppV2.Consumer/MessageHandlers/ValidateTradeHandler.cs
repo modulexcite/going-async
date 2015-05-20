@@ -8,7 +8,7 @@ using Sixeyed.GoingAsync.Steps.Validate;
 
 namespace Sixeyed.GoingAsync.AppV2.Consumer.MessageHandlers
 {
-	public class ValidateTradeHandler : IHandleMessages<ValidateTradeMessage>
+    public class ValidateTradeHandler : IHandleMessages<ValidateTradeMessage>
     {
         protected ITradeContextFactory _dbFactory;
 
@@ -16,25 +16,25 @@ namespace Sixeyed.GoingAsync.AppV2.Consumer.MessageHandlers
         {
             _dbFactory = dbFactory;
         }
-		public void Handle( ValidateTradeMessage message )
-		{
-			var stopwatch = Stopwatch.StartNew();
+        public void Handle(ValidateTradeMessage message)
+        {
+            var stopwatch = Stopwatch.StartNew();
 
-			Console.WriteLine( "| ValidateTradeHandler | Received trade with message ID: " + message.TradeId );
+            Console.WriteLine("| ValidateTradeHandler | Received trade with message ID: " + message.TradeId);
 
-			using( var db = _dbFactory.GetContext() )
-			{
-				var trade = db.IncomingTrades.Find( message.TradeId );
+            using (var db = _dbFactory.GetContext())
+            {
+                var trade = db.IncomingTrades.Find(message.TradeId);
 
-				var validator = new FpmlValidator();
-				var failures = validator.Validate( trade.Fpml );
-				trade.IsFpmlValid = failures.Any() == false;
+                var validator = new FpmlValidator();
+                var failures = validator.Validate(trade.Fpml);
+                trade.IsFpmlValid = failures.Any() == false;
 
-				trade.ProcessedAt = DateTime.UtcNow;
-				db.SaveChanges();
-			}
+                trade.ProcessedAt = DateTime.UtcNow;
+                db.SaveChanges();
+            }
 
-			Console.WriteLine( "* | ValidateTradeHandler | Processed trade with ID: {0}, took: {1}ms", message.TradeId, stopwatch.ElapsedMilliseconds );
-		}
-	}
+            Console.WriteLine("* | ValidateTradeHandler | Processed trade with ID: {0}, took: {1}ms", message.TradeId, stopwatch.ElapsedMilliseconds);
+        }
+    }
 }
