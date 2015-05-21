@@ -104,6 +104,21 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>if exist "c:\temp\going-async\$(ProjectName)". (
+    del "c:\temp\going-async\$(ProjectName)\*.*"  /Q
+    echo "Build folder purged".
+) else (
+    echo "no Build folder to purge.".
+)
+
+if not exist "c:\temp\going-async\$(ProjectName)". (
+    md "c:\temp\going-async\$(ProjectName)"
+    echo "Build folder created.".
+)
+
+copy "$(TargetDir)\*.*" "c:\temp\going-async\$(ProjectName)\*.*" /B /Y</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

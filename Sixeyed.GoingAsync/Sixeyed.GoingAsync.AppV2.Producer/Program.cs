@@ -4,6 +4,7 @@ using Sixeyed.GoingAsync.Core.Incoming;
 using Sixeyed.GoingAsync.Core.Model;
 using System;
 using NServiceBus;
+using NServiceBus.Config;
 
 namespace Sixeyed.GoingAsync.AppV2.Producer
 {

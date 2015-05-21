@@ -9,8 +9,8 @@ namespace Sixeyed.GoingAsync.Core.Model
     {
         public TradeContextConfiguration()
         {
-            Console.WriteLine(" *** TradeContextConfiguration *** setting SqlAzureExecutionStrategy");
-            this.SetExecutionStrategy("System.Data.SqlClient", () => new SqlAzureExecutionStrategy(10, TimeSpan.FromSeconds(5)));
+			//Console.WriteLine(" *** TradeContextConfiguration *** setting SqlAzureExecutionStrategy");
+			//this.SetExecutionStrategy("System.Data.SqlClient", () => new SqlAzureExecutionStrategy(10, TimeSpan.FromSeconds(5)));
         }
     }
 }

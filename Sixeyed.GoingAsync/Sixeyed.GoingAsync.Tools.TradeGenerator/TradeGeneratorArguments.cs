@@ -12,7 +12,7 @@ namespace Sixeyed.GoingAsync.Tools.TradeGenerator
         [DefaultValue(1000)]
         public int Count { get; set; }
 
-        [DefaultValue("v1")]
+        [DefaultValue("v2")]
         public string AppVersion { get; set; }
     }
 }

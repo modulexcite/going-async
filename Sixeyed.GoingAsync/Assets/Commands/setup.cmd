@@ -1,8 +1,8 @@
+mkdir c:\temp\going-async\in\app-nsb\
+mkdir c:\temp\going-async\FPML\Schemas\
+copy ..\FPML\Schemas\*.* c:\temp\going-async\FPML\Schemas\*.*
 
-mkdir c:\in\app-v1\
-mkdir c:\in\app-v2\
-
-powershell -Command "& {New-MsmqQueue -Name trade-validate;}"
-powershell -Command "& {New-MsmqQueue -Name trade-enrich-party1;}"
-powershell -Command "& {New-MsmqQueue -Name trade-enrich-party2;}"
-powershell -Command "& {Get-MsmqQueue -Name trade-* -QueueType Private | Set-MsmqQueueACL -UserName Everyone -Allow FullControl;}"
+start ..\QueueCreator\qc.exe -acwu -n=Sixeyed.GoingAsync.AppV2.Producer
+start ..\QueueCreator\qc.exe -acwu -n=Sixeyed.GoingAsync.AppV2.Consumer.trade-validate
+start ..\QueueCreator\qc.exe -acwu -n=Sixeyed.GoingAsync.AppV2.Consumer.trade-enrich-party1
+start ..\QueueCreator\qc.exe -acwu -n=Sixeyed.GoingAsync.AppV2.Consumer.trade-enrich-party2

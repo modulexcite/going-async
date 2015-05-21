@@ -22,8 +22,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{52B04E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.GoingAsync.AppV1", "Sixeyed.GoingAsync.AppV1\Sixeyed.GoingAsync.AppV1.csproj", "{A6E3B033-61E8-468E-BE9A-B02453901361}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.GoingAsync.Core.Tests", "Sixeyed.GoingAsync.Core.Tests\Sixeyed.GoingAsync.Core.Tests.csproj", "{5FDFC940-096E-4EE7-B339-606DCFC2B87C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Sixeyed.GoingAsync.Database", "Sixeyed.GoingAsync.Database\Sixeyed.GoingAsync.Database.sqlproj", "{6B4C5C7F-D7F8-4734-9BA3-97CAC330F62D}"
@@ -36,10 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{E58AA8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{F2F8480D-A20E-499D-A4D2-4711F2DB70D5}"
 	ProjectSection(SolutionItems) = preProject
-		Assets\Commands\run-app-v1.0.cmd = Assets\Commands\run-app-v1.0.cmd
-		Assets\Commands\run-app-v1.1.cmd = Assets\Commands\run-app-v1.1.cmd
-		Assets\Commands\run-app-v1.2.cmd = Assets\Commands\run-app-v1.2.cmd
-		Assets\Commands\run-app-v2.0.cmd = Assets\Commands\run-app-v2.0.cmd
+		Assets\Commands\run-app-NSB.cmd = Assets\Commands\run-app-NSB.cmd
+		Assets\Commands\setup.cmd = Assets\Commands\setup.cmd
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.GoingAsync.AppV2.Producer", "Sixeyed.GoingAsync.AppV2.Producer\Sixeyed.GoingAsync.AppV2.Producer.csproj", "{59DA1864-FDC1-4EAC-A40B-40CB6D39609F}"
@@ -68,10 +64,6 @@ Global
 		{7B47695D-32E9-4B8D-B479-BA745EB90CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B47695D-32E9-4B8D-B479-BA745EB90CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B47695D-32E9-4B8D-B479-BA745EB90CE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6E3B033-61E8-468E-BE9A-B02453901361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6E3B033-61E8-468E-BE9A-B02453901361}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6E3B033-61E8-468E-BE9A-B02453901361}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6E3B033-61E8-468E-BE9A-B02453901361}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5FDFC940-096E-4EE7-B339-606DCFC2B87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FDFC940-096E-4EE7-B339-606DCFC2B87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FDFC940-096E-4EE7-B339-606DCFC2B87C}.Release|Any CPU.ActiveCfg = Release|Any CPU

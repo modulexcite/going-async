@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enrich\PartyEnricher.cs" />
+    <Compile Include="Enrich\PartyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validate\FpmlValidator.cs" />
   </ItemGroup>

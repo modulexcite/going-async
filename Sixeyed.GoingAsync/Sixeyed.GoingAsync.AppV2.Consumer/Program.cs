@@ -30,6 +30,7 @@ namespace Sixeyed.GoingAsync.AppV2.Consumer
 
 			var cfg = new BusConfiguration();
 			cfg.EndpointName( arguments.EndpointName );
+			cfg.EnableInstallers();
 			cfg.Conventions().DefiningMessagesAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Messages" ) );
 			cfg.UsePersistence<InMemoryPersistence>();
 			cfg.UseContainer<UnityBuilder>( cusomize =>
