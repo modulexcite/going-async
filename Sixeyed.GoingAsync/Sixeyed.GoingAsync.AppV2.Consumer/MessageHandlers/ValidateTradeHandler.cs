@@ -25,6 +25,11 @@ namespace Sixeyed.GoingAsync.AppV2.Consumer.MessageHandlers
             using (var db = _dbFactory.GetContext())
             {
                 var trade = db.IncomingTrades.Find(message.TradeId);
+				if( trade == null )
+				{
+					Console.WriteLine( "Skipping, not found (to survive to demo retries)." );
+					return;
+				}
 
                 var validator = new FpmlValidator();
                 var failures = validator.Validate(trade.Fpml);

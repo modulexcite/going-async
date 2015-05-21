@@ -7,22 +7,9 @@ namespace Sixeyed.GoingAsync.Steps.Enrich
 {
     public class PartyEnricher
     {
-		private static List<PartyModel> _Models;
+		List<PartyModel> _Models;
 
-		//public IHttpActionResult Get(string id, string scheme)
-		//{
-		//	if (scheme.Equals("lei", StringComparison.InvariantCultureIgnoreCase))
-		//	{
-		//		var party = _Models.FirstOrDefault(x => x.LegalEntityIdentifier == id);
-		//		if (party != null)
-		//		{
-		//			return Ok(party);
-		//		}
-		//	}
-		//	return NotFound();
-		//}
-
-		static PartyEnricher()
+		public PartyEnricher()
         {
             _Models = new List<PartyModel>();
             _Models.Add(new PartyModel { InternalId = "1234", LegalEntityIdentifier = "5493001RKR55V4X61F71" });
@@ -33,16 +20,9 @@ namespace Sixeyed.GoingAsync.Steps.Enrich
 
         public string GetInternalId(string legalEntityIdentifier)
         {
-			return _Models.Single( m => m.LegalEntityIdentifier == legalEntityIdentifier ).InternalId;
+			//throw new System.ArgumentException( "Invalid LegalIdentifier: " + legalEntityIdentifier );
 
-			//var requestUrl = string.Format("{0}/party?id={1}&scheme=lei", _BaseUrl, legalEntityIdentifier);
-			//using (var apiClient = new HttpClient())
-			//{
-			//	apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-			//	var json = apiClient.GetStringAsync(requestUrl).Result;
-			//	dynamic party = JObject.Parse(json);
-			//	return (string)party.internalId;
-			//}
+			return _Models.Single( m => m.LegalEntityIdentifier == legalEntityIdentifier ).InternalId;
         }
     }
 }

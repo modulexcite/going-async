@@ -5,5 +5,5 @@ start "Party2Enricher" /D C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Consumer 
 
 sqlcmd -S .\SqlExpress -d GoingAsync -Q "truncate table incomingtrades"
 del /Q C:\temp\going-async\in\app-nsb\*.*
-start C:\temp\going-async\Sixeyed.GoingAsync.Tools.TradeGenerator\Sixeyed.GoingAsync.Tools.TradeGenerator.exe /a v2 /c 10000
+start C:\temp\going-async\Sixeyed.GoingAsync.Tools.TradeGenerator\Sixeyed.GoingAsync.Tools.TradeGenerator.exe /a v2 /c 1
 start C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Producer\Sixeyed.GoingAsync.AppV2.Producer.exe

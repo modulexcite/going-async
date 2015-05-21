@@ -26,6 +26,11 @@ namespace Sixeyed.GoingAsync.AppV2.Consumer.MessageHandlers
             {
                 var enricher = new PartyEnricher();
                 var trade = db.IncomingTrades.Find(message.TradeId);
+				if( trade == null )
+				{
+					Console.WriteLine( "Skipping, not found (to survive to demo retries)." );
+					return;
+				}
 
                 trade.Party1Id = enricher.GetInternalId(trade.Party1Lei);
                 trade.ProcessedAt = DateTime.UtcNow;
