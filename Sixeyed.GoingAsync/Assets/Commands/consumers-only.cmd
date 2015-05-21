@@ -1,0 +1,3 @@
+start "Validator" /D C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Consumer C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Consumer\Sixeyed.GoingAsync.AppV2.Consumer.exe /e Sixeyed.GoingAsync.AppV2.Consumer.trade-validate
+start "Party1Enricher" /D C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Consumer C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Consumer\Sixeyed.GoingAsync.AppV2.Consumer.exe /e Sixeyed.GoingAsync.AppV2.Consumer.trade-enrich-party1
+start "Party2Enricher" /D C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Consumer C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Consumer\Sixeyed.GoingAsync.AppV2.Consumer.exe /e Sixeyed.GoingAsync.AppV2.Consumer.trade-enrich-party2

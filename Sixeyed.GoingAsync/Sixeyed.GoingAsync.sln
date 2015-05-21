@@ -27,7 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{E58AA8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{F2F8480D-A20E-499D-A4D2-4711F2DB70D5}"
 	ProjectSection(SolutionItems) = preProject
-		Assets\Commands\run-app-NSB.cmd = Assets\Commands\run-app-NSB.cmd
+		Assets\Commands\clean-up.cmd = Assets\Commands\clean-up.cmd
+		Assets\Commands\consumers-only.cmd = Assets\Commands\consumers-only.cmd
+		Assets\Commands\producer-only.cmd = Assets\Commands\producer-only.cmd
+		Assets\Commands\run-all-endpoints-with-clean-up.cmd = Assets\Commands\run-all-endpoints-with-clean-up.cmd
 		Assets\Commands\setup.cmd = Assets\Commands\setup.cmd
 	EndProjectSection
 EndProject

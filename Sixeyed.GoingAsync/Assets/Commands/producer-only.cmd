@@ -1,0 +1,2 @@
+start C:\temp\going-async\Sixeyed.GoingAsync.Tools.TradeGenerator\Sixeyed.GoingAsync.Tools.TradeGenerator.exe /a v2 /c 100
+start C:\temp\going-async\Sixeyed.GoingAsync.AppV2.Producer\Sixeyed.GoingAsync.AppV2.Producer.exe
