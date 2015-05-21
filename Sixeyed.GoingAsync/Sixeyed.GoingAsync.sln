@@ -15,13 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stubs", "Stubs", "{9348E340
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.GoingAsync.Stubs.PartyApi", "Sixeyed.GoingAsync.Stubs.PartyApi\Sixeyed.GoingAsync.Stubs.PartyApi.csproj", "{7B47695D-32E9-4B8D-B479-BA745EB90CE5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{52B04E49-E234-4EDA-BE8A-61EA01235B42}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.GoingAsync.Core.Tests", "Sixeyed.GoingAsync.Core.Tests\Sixeyed.GoingAsync.Core.Tests.csproj", "{5FDFC940-096E-4EE7-B339-606DCFC2B87C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Sixeyed.GoingAsync.Database", "Sixeyed.GoingAsync.Database\Sixeyed.GoingAsync.Database.sqlproj", "{6B4C5C7F-D7F8-4734-9BA3-97CAC330F62D}"
